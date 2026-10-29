@@ -1,0 +1,107 @@
+{
+  "版本号": "open-3x-1.0.0",
+  "auto": true,
+  "continueOnError": true,
+  "构建设置": {
+    "hook": "onAfterBuild",
+    "failBuildOnError": true
+  },
+  "基本设置": {
+    "createBackup": true,
+    "compact": true,
+    "target": "browser",
+    "log": false,
+    "simplify": true
+  },
+  "保护设置": {
+    "selfDefending": false,
+    "debugProtection": false,
+    "debugProtectionInterval": 0,
+    "disableConsoleOutput": false
+  },
+  "混淆强度": {
+    "controlFlowFlattening": true,
+    "controlFlowFlatteningThreshold": 0.25,
+    "deadCodeInjection": true,
+    "deadCodeInjectionThreshold": 0.1,
+    "stringArrayCallsTransformThreshold": 0.5
+  },
+  "字符串处理": {
+    "stringArray": true,
+    "stringArrayRotate": true,
+    "stringArrayShuffle": true,
+    "stringArrayEncoding": ["base64"],
+    "stringArrayIndexesType": ["hexadecimal-number"],
+    "stringArrayIndexShift": true,
+    "stringArrayWrappersCount": 1,
+    "stringArrayWrappersType": "variable",
+    "stringArrayWrappersChainedCalls": true,
+    "stringArrayWrappersParametersMaxCount": 2,
+    "stringArrayThreshold": 0.75,
+    "stringArrayCallsTransform": false,
+    "forceTransformStrings": [],
+    "splitStrings": false,
+    "splitStringsChunkLength": 10
+  },
+  "标识符处理": {
+    "identifierNamesGenerator": "hexadecimal",
+    "identifiersPrefix": "",
+    "identifiersDictionary": [],
+    "transformObjectKeys": false,
+    "renameGlobals": false,
+    "renameProperties": false,
+    "renamePropertiesMode": "safe",
+    "reservedNames": []
+  },
+  "源码映射": {
+    "sourceMap": false,
+    "sourceMapMode": "separate",
+    "sourceMapBaseUrl": "",
+    "sourceMapFileName": "",
+    "sourceMapSourcesMode": "sources-content"
+  },
+  "过滤设置": {
+    "filePathExclude": [
+      "node_modules",
+      ".git",
+      "js-obfuscator-backups",
+      "cocos-js",
+      "wasm",
+      "libs"
+    ],
+    "fileNameExclude": [
+      "application",
+      "settings",
+      "engine",
+      "jsb",
+      "adapter",
+      "polyfills",
+      "cocos2d-js-min",
+      "vconsole"
+    ],
+    "fullPathExclude": [
+      "/game.js",
+      "/src/settings.js",
+      "/subContext/game.js",
+      "/subContext/src/settings.js",
+      "/openDataContext/game.js",
+      "/openDataContext/src/settings.js"
+    ],
+    "保护特定代码模式": {
+      "启用": true,
+      "保护模式列表": ["._super"]
+    }
+  },
+  "特殊功能": {
+    "domainLock": [],
+    "domainLockEnabled": false,
+    "domainLockRedirectUrl": "about:blank",
+    "reservedNames": [],
+    "reservedStrings": [],
+    "seed": 0,
+    "numbersToExpressions": false,
+    "unicodeEscapeSequence": false,
+    "ignoreImports": false,
+    "tt_navigateToScene": ""
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "es2019",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "checkJs": false
+  },
+  "exclude": ["node_modules"],
+  "include": ["main.js", "builder.js", "hooks.js", "lib/**/*", "panel/**/*", "test/**/*"]
+}

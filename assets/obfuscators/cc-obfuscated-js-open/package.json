@@ -1,0 +1,51 @@
+{
+  "name": "cc-obfuscated-js-open",
+  "version": "1.0.0",
+  "description": "i18n:cc-obfuscated-js-open.description",
+  "author": "Open-source replacement",
+  "license": "MIT",
+  "main": "./main.js",
+  "engines": {
+    "node": ">=12.22.0"
+  },
+  "runtime-resource": {
+    "path": "runtime_Ts/",
+    "name": "Open JS Obfuscator"
+  },
+  "reload": {
+    "ignore": [
+      "runtime_Ts/**/*"
+    ]
+  },
+  "main-menu": {
+    "i18n:MAIN_MENU.package.title/i18n:cc-obfuscated-js-open.menu.name/i18n:cc-obfuscated-js-open.menu.panel": {
+      "message": "cc-obfuscated-js-open:open_panel",
+      "accelerator": "Alt+Shift+B",
+      "visible": true
+    },
+    "i18n:MAIN_MENU.package.title/i18n:cc-obfuscated-js-open.menu.name/i18n:cc-obfuscated-js-open.menu.enable": {
+      "message": "cc-obfuscated-js-open:enable_auto",
+      "visible": true
+    },
+    "i18n:MAIN_MENU.package.title/i18n:cc-obfuscated-js-open.menu.name/i18n:cc-obfuscated-js-open.menu.disable": {
+      "message": "cc-obfuscated-js-open:disable_auto",
+      "visible": true
+    }
+  },
+  "panel": {
+    "title": "Open JS Obfuscator",
+    "main": "panel/index.js",
+    "type": "dockable",
+    "engineSupport": true,
+    "min-width": 520,
+    "min-height": 560,
+    "width": 660,
+    "height": 720
+  },
+  "scripts": {
+    "test": "node test/smoke.js && node test/worker-smoke.js && node test/main-smoke.js"
+  },
+  "dependencies": {
+    "javascript-obfuscator": "4.1.1"
+  }
+}

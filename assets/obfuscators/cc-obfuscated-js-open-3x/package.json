@@ -1,0 +1,88 @@
+{
+  "name": "cc-obfuscated-js-open-3x",
+  "title": "i18n:cc-obfuscated-js-open-3x.title",
+  "package_version": 2,
+  "version": "1.0.0",
+  "description": "i18n:cc-obfuscated-js-open-3x.description",
+  "author": "Open-source replacement",
+  "license": "MIT",
+  "main": "./main.js",
+  "engines": {
+    "node": ">=14.17.0"
+  },
+  "contributions": {
+    "menu": [
+      {
+        "path": "i18n:menu.extension/i18n:cc-obfuscated-js-open-3x.menu.name",
+        "label": "i18n:cc-obfuscated-js-open-3x.menu.panel",
+        "message": "open-panel"
+      },
+      {
+        "path": "i18n:menu.extension/i18n:cc-obfuscated-js-open-3x.menu.name",
+        "label": "i18n:cc-obfuscated-js-open-3x.menu.enable",
+        "message": "enable-auto"
+      },
+      {
+        "path": "i18n:menu.extension/i18n:cc-obfuscated-js-open-3x.menu.name",
+        "label": "i18n:cc-obfuscated-js-open-3x.menu.disable",
+        "message": "disable-auto"
+      }
+    ],
+    "messages": {
+      "open-panel": {
+        "public": true,
+        "methods": ["openPanel"]
+      },
+      "open-config": {
+        "public": true,
+        "methods": ["openConfig"]
+      },
+      "enable-auto": {
+        "public": true,
+        "methods": ["enableAuto"]
+      },
+      "disable-auto": {
+        "public": true,
+        "methods": ["disableAuto"]
+      },
+      "get-status": {
+        "public": true,
+        "methods": ["getStatus"]
+      },
+      "run-manual": {
+        "public": true,
+        "methods": ["runManual"]
+      }
+    },
+    "shortcuts": [
+      {
+        "message": "open-panel",
+        "win": "alt+shift+b",
+        "mac": "alt+shift+b"
+      }
+    ],
+    "builder": "./builder.js"
+  },
+  "panels": {
+    "default": {
+      "title": "Open JS Obfuscator 3.x",
+      "type": "dockable",
+      "main": "./panel/index.js",
+      "size": {
+        "min-width": 520,
+        "min-height": 560,
+        "width": 700,
+        "height": 760
+      }
+    }
+  },
+  "reload": {
+    "ignore": ["runtime_Ts/**/*"]
+  },
+  "scripts": {
+    "test": "node test/smoke.js && node test/worker-smoke.js && node test/main-smoke.js && node test/hooks-smoke.js && node test/schema-smoke.js"
+  },
+  "dependencies": {
+    "javascript-obfuscator": "4.1.1"
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "微信小游戏发布助手"
+  short_description: "完成 Cocos 环境、构建保护、包体优化和微信开发版上传"
+  default_prompt: "检查这个有权发布的 Cocos 项目，并引导我完成微信小游戏构建与开发版上传。"

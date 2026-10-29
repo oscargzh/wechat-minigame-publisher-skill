@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "checkJs": false
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "include": [
+    "main.js",
+    "lib/**/*.js",
+    "panel/**/*.js",
+    "test/**/*.js"
+  ]
+}
